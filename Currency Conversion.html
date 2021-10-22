@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreign exchange rates and currency conversion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!--  
+MY API TOKEN : 
+
+http://data.fixer.io/api/latest?access_key=8303578bb1d498a693e28e4b1edd7afb&format=1
+
+http://data.fixer.io/api/latest?access_key=8303578bb1d498a693e28e4b1edd7afb&format=1&symbols=MAD
+
+
+-->
+    <div class="d-flex justify-content-center" style="margin-top: 4%!important">
+        <div class="card" style="width: 50%;">
+            <center>
+                <img class="card-img-top" src="https://cdn-icons-png.flaticon.com/512/439/439040.png" alt="Card image cap" style="width: 20%!important;margin: auto;">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <h1>Currency Converter</h1>
+                    </h5><br>
+                    <p class="card-text">Type your amount and chose the currency and wait for the result</p>
+                    <br>
+                    <form>
+                        <table style="width:80%">
+                            <tr>
+                                <td>
+                                    <select id="Current_Currency_selected" name="Current_Currency_selected" required="required" class="custom-select">
+                                        <option value="USD">USD</option>
+                                        <option value="MAD">MAD</option>
+                                        <option value="EUR" selected>EUR</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="fa fa-money"></i>
+                                            </div>
+                                        </div>
+                                        <input id="Current_Currency" name="Current_Currency" placeholder="Type the amount of your current currency" type="text" required="required" class="form-control">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <button name="Swap_It" type="Swap_It" class="btn btn-primary" style="margin: 5%!important;">Swap it</button>
+                                </td>
+                                <td>
+                                    <h4 style="margin-left: 25%;">1 USD = 10 DH</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select id="Desired_Currency_selected" name="Desired_Currency_selected" class="custom-select">
+                                        <option value="MAD" selected>MAD</option>
+                                        <option value="USD">USD</option>
+                                        <option value="fish">EUR</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="fa fa-money"></i>
+                                            </div>
+                                        </div>
+                                        <input id="Desired_Currency" name="Desired_Currency" placeholder="Type the amount of your Desired_Currency" type="text" required="required" class="form-control">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </center>
+        </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+</script>
+
+</html>
