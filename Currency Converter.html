@@ -28,6 +28,7 @@ http://data.fixer.io/api/latest?access_key=8303578bb1d498a693e28e4b1edd7afb&form
                 <div class="card-body">
                     <h5 class="card-title">
                         <h1>Currency Converter</h1>
+                        <h5>Current Date & Time : <span id="DateAndTime"> ## </span></h5>
                     </h5><br>
                     <p class="card-text">Type your amount and chose the currency and wait for the result</p>
                     <br>
@@ -88,5 +89,14 @@ http://data.fixer.io/api/latest?access_key=8303578bb1d498a693e28e4b1edd7afb&form
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
 </script>
+<script src="functions.js"></script>
 
 </html>
+<script>
+    document.getElementById('DateAndTime').innerHTML = currentDateOfCheck() + ' | ' + currentTimeOfCheck();
+    console.log(currentDateOfCheck());
+    console.log(currentTimeOfCheck());
+    fetch('http://data.fixer.io/api/latest?access_key=8303578bb1d498a693e28e4b1edd7afb&format=1&symbols=MAD')
+        .then(response => response.text())
+        .then(data => console.log(data));
+</script>
