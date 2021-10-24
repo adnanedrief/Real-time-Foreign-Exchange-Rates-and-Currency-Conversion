@@ -22,7 +22,6 @@ function fetchTheDataBySymbole(Symbole) {
     fetch('http://data.fixer.io/api/latest?access_key=8303578bb1d498a693e28e4b1edd7afb&format=1&symbols=MAD')
         .then(response => response.json())
         .then(data => console.log(data)); //data.rates.MAD)
-
 }
 
 function getTheElement(ID) {
