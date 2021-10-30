@@ -1,4 +1,4 @@
-### Infos
+# Infos
 
 Real time Foreign Exchange Rates and Currency Conversion Using Vanilla JS and REST API
 
