@@ -2,7 +2,6 @@
 
 Real time Foreign Exchange Rates and Currency Conversion Using Vanilla JS and REST API
 
-#### [~ Live Demo ~](https://adnanedrief.github.io/Real-time-Foreign-Exchange-Rates-and-Currency-Conversion/ "Live Demo")
 
 
 # Demo
